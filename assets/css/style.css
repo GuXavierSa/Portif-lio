@@ -110,10 +110,6 @@ div {
     align-items: flex-start;
 }
 
-#secao-projetos{
-
-}
-
 #secao-projetos ul{
     display: flex;
     color: var(--text-primary);
