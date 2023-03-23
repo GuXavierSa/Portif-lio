@@ -4,51 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Portifólio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Web developer & programer</h1>
-        <span>Gustavo Xavier | Lucas Boni</span>
-        <br>
-        <a href="#" class="botao">Saiba mais</a>
+        <h1>Web Developer & Front End</h1>
+        <span>João Carlos Lima</span>
+        <a href="#" class="botao">saiba mais</a>
     </header>
 
     <section>
-        <img id="avatar" src="https://github.com/LucasBoni29.png" alt="Foto do Boni">
+        <img id="avatar" src="https://github.com/LucasBoni29.png" alt="foto do lucas boni">
         <div>
-            <h2>Programando e trabalhando desde 2020.</h2>
-            <p>Lorem ipsum dolor sit amet. Aut molestiae aliquid aut fugiat obcaecati sit omnis facilis eos autem molestiae est aliquid enim. Sit expedita aliquam ex atque consequuntur aut similique dolorum a reprehenderit corrupti aut esse aperiam. Nam quibusdam tempora ad labore libero non odit voluptate rem voluptatibus necessitatibus aut necessitatibus tempore.</p>
-            <a href="#" class="botao">Ver projetos</a>
+            <h2>Programando e ensinando a programar desde 2020</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
+            <a href="#" class="botao">ver projetos</a>
         </div>
     </section>
 
     <section id="secao-projetos">
         <ul>
             <li>
-                <div class="card-text">
-                    <h2>Wise</h2>
-                    <h3>Angular, JS, SCSS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id porro aliquam repellendus et exercitationem?</p>
-                    <a href="#" class="botao">Saiba mais</a>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/img/pcGamer.jpg" alt="imagem do pc gamer " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Estude</h2>
+                        <h3>HTML, CSS, JS</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <a href="#" class="botao">saiba mais</a>
+                    </div>
                 </div>
             </li>
             <li>
-                <h2>WiSport Turismo</h2>
-                <h3>Laravel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id porro aliquam repellendus et exercitationem?</p>
-                <a href="#" class="botao">Saiba mais</a>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/img/paredeEstilosa.jpg" alt="imagem do projeto " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Seja você</h2>
+                        <h3>Java</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
+                        <a href="#" class="botao"> saiba mais</a>
+                    </div>
             </li>
             <li>
-                <h2>Gemini</h2>
-                <h3>Node.js</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id porro aliquam repellendus et exercitationem?</p>
-                <a href="#" class="botao">Saiba mais</a>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/img/pets.jpg" alt="imagem do projeto " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Aproveite!</h2>
+                        <h3>PHP, Laravel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
+                        <a href="#" class="botao"> saiba mais</a>
+                    </div>
             </li>
         </ul>
     </section>
 
+    <secao id="secao-orcamento">
+        <form action="#">
+
+            <h3>Orçamento</h3>
+            <label for="quantidade">Nr. de Páginas</label>
+            <input type="number" id="quantidade" min="1" value="1">
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+            <label for="layout">Precisa de layout?</label>
+
+            <div>
+                <input type="radio" id="layou-sim" name="layout">
+                <label for="layout-sim">Sim, preciso</label>
+                <input type="radio" id="layout-nao" name="layout">
+                <label for="layout-nao">Não, já tenho</label>
+            </div>
+
+            <label for="prazo">Prazo</label>
+            <input type="range" min="1" max="10" id="prazo">
+            <output>$0,00</output>
+        
+        </form>
+    </secao>
+
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
