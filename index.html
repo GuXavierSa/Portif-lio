@@ -6,16 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <header>
+    <nav>
+        <div id="hamburguer">
+            <div class="linha" id="linha1"></div>
+            <div class="linha" id="linha2"></div>
+            <div class="linha" id="linha3"></div>
+        </div>
+        <ul>
+            <li><a href="#home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a></li>
+            <li><a href="#secao-apresentacao">
+                <i class="fa-solid fa-user"></i>
+                Apresentação
+            </a></li>
+            <li><a href="#secao-projetos">
+                <i class="fa-solid fa-code"></i>
+                Projetos
+            </a></li>
+            <li><a href="#secao-orcamento">
+                <i class="fa-regular fa-money-bill-1"></i>
+                Orçamento
+            </a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
         <h1>Web Developer & Front End</h1>
-        <span>João Carlos Lima</span>
-        <a href="#" class="botao">saiba mais</a>
+        <span>Lucas Boni dos Santos</span>
+        <a href="#secao-apresentacao" class="botao">saiba mais</a>
     </header>
 
-    <section>
+    <section id="secao-apresentacao">
         <img id="avatar" src="https://github.com/LucasBoni29.png" alt="foto do lucas boni">
         <div>
             <h2>Programando e ensinando a programar desde 2020</h2>
@@ -92,4 +119,5 @@
 
 </body>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/menu.js"></script>
 </html>

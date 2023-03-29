@@ -15,8 +15,58 @@
     font-size: 62.5%; /* 10/16 */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--font-default);
+}
+
+#hamburguer{
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+#hamburguer .linha{
+    height: .5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .2rem .2rem #000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #FFF;
+    height: 100vh;
+    width: 20rem;
+    z-index: 10; /*DEIXAR O MENU ACIMA DE TUDO*/
+    right: -20rem;
+    transition: right 1s;
+}
+
+.menu-show{
+    right: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none; /*SEM SUBLINHADO*/
+    font-size: 1.6rem;
+    color: var(--text-secundary);
+}
+
+nav a:hover{
+    color: #6a3093;
 }
 
 header {
