@@ -5,117 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" rel="preload" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
 </head>
 <body>
 
-    <nav>
-        <div id="hamburguer">
-            <div class="linha" id="linha1"></div>
-            <div class="linha" id="linha2"></div>
-            <div class="linha" id="linha3"></div>
+    <div class="loader">
+        <div class="spin">
+
         </div>
-        <ul>
-            <li><a href="#home">
-                <i class="fa-solid fa-house"></i>
-                Home
-            </a></li>
-            <li><a href="#secao-apresentacao">
-                <i class="fa-solid fa-user"></i>
-                Apresentação
-            </a></li>
-            <li><a href="#secao-projetos">
-                <i class="fa-solid fa-code"></i>
-                Projetos
-            </a></li>
-            <li><a href="#secao-orcamento">
-                <i class="fa-regular fa-money-bill-1"></i>
-                Orçamento
-            </a></li>
-        </ul>
-    </nav>
+    </div>
 
-    <header id="home">
-        <h1>Web Developer & Front End</h1>
-        <span>Lucas Boni dos Santos</span>
-        <a href="#secao-apresentacao" class="botao">saiba mais</a>
-    </header>
-
-    <section id="secao-apresentacao">
-        <img id="avatar" src="https://github.com/LucasBoni29.png" alt="foto do lucas boni">
-        <div>
-            <h2>Programando e ensinando a programar desde 2020</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
-            <a href="#" class="botao">ver projetos</a>
-        </div>
-    </section>
-
-    <section id="secao-projetos">
-        <ul>
-            <li>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                      <img src="./assets/img/pcGamer.jpg" alt="imagem do pc gamer " />
-                    </div>
-                    <div class="card-text">
-                        <h2>Estude</h2>
-                        <h3>HTML, CSS, JS</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="#" class="botao">saiba mais</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                      <img src="./assets/img/paredeEstilosa.jpg" alt="imagem do projeto " />
-                    </div>
-                    <div class="card-text">
-                        <h2>Seja você</h2>
-                        <h3>Java</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
-                        <a href="#" class="botao"> saiba mais</a>
-                    </div>
-            </li>
-            <li>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                      <img src="./assets/img/pets.jpg" alt="imagem do projeto " />
-                    </div>
-                    <div class="card-text">
-                        <h2>Aproveite!</h2>
-                        <h3>PHP, Laravel</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
-                        <a href="#" class="botao"> saiba mais</a>
-                    </div>
-            </li>
-        </ul>
-    </section>
-
-    <secao id="secao-orcamento">
-        <form action="#">
-
-            <h3>Orçamento</h3>
-            <label for="quantidade">Nr. de Páginas</label>
-            <input type="number" id="quantidade" min="1" value="1">
-            <label for="js">Precisa de JS?</label>
-            <input type="checkbox" id="js">
-            <label for="layout">Precisa de layout?</label>
-
-            <div>
-                <input type="radio" id="layou-sim" name="layout">
-                <label for="layout-sim">Sim, preciso</label>
-                <input type="radio" id="layout-nao" name="layout">
-                <label for="layout-nao">Não, já tenho</label>
+    <main class="hiden">
+    
+        <nav>
+            <div id="hamburguer">
+                <div class="linha" id="linha1"></div>
+                <div class="linha" id="linha2"></div>
+                <div class="linha" id="linha3"></div>
             </div>
+            <ul>
+                <li><a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a></li>
+                <li><a href="#secao-apresentacao">
+                    <i class="fa-solid fa-user"></i>
+                    Apresentação
+                </a></li>
+                <li><a href="#secao-projetos">
+                    <i class="fa-solid fa-code"></i>
+                    Projetos
+                </a></li>
+                <li><a href="#secao-orcamento">
+                    <i class="fa-regular fa-money-bill-1"></i>
+                    Orçamento
+                </a></li>
+            </ul>
+        </nav>
 
-            <label for="prazo">Prazo</label>
-            <input type="range" min="1" max="10" id="prazo">
-            <output>$0,00</output>
-        
-        </form>
-    </secao>
+        <header id="home">
+            <h1>Web Developer & Front End</h1>
+            <span class="only-large">Lucas Boni dos Santos</span>
+            <a href="#secao-apresentacao" class="botao">saiba mais</a>
+        </header>
+
+        <section id="secao-apresentacao">
+            <img id="avatar" class="only-large" src="https://github.com/LucasBoni29.png" alt="foto do lucas boni">
+            <div>
+                <h2>Programando e ensinando a programar desde 2020</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
+                <a href="#" class="botao">ver projetos</a>
+            </div>
+        </section>
+
+        <section id="secao-projetos">
+            <ul>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                        <img src="./assets/img/pcGamer.jpg" alt="imagem do pc gamer " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Estude</h2>
+                            <h3>HTML, CSS, JS</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="botao">saiba mais</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                        <img src="./assets/img/paredeEstilosa.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Seja você</h2>
+                            <h3>Java</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
+                            <a href="#" class="botao"> saiba mais</a>
+                        </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                        <img src="./assets/img/pets.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Aproveite!</h2>
+                            <h3>PHP, Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
+                            <a href="#" class="botao"> saiba mais</a>
+                        </div>
+                </li>
+            </ul>
+        </section>
+
+        <secao id="secao-orcamento">
+            <form action="#">
+
+                <h3>Orçamento</h3>
+                <label for="quantidade">Nr. de Páginas</label>
+                <input type="number" id="quantidade" min="1" value="1">
+                <label for="js">Precisa de JS?</label>
+                <input type="checkbox" id="js">
+                <label for="layout">Precisa de layout?</label>
+
+                <div>
+                    <input type="radio" id="layou-sim" name="layout">
+                    <label for="layout-sim">Sim, preciso</label>
+                    <input type="radio" id="layout-nao" name="layout">
+                    <label for="layout-nao">Não, já tenho</label>
+                </div>
+
+                <label for="prazo">Prazo</label>
+                <input type="range" min="1" max="10" id="prazo">
+                <output>$0,00</output>
+            
+            </form>
+        </secao>
+
+    </main>
 
 </body>
 <script src="./assets/js/script.js"></script>

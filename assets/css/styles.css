@@ -23,6 +23,35 @@ body{
     font-family: var(--font-default);
 }
 
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.spin{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #d0d0d0;
+    border-top: 10px solid #6a3093;
+    animation: spin 2s infinite;
+}
+
+.hiden{
+    display: none;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
 #hamburguer{
     position: fixed;
     right: 2rem;
@@ -80,6 +109,10 @@ header {
     color: var(--text-primary);
     position: relative;
     overflow:hidden;
+}
+
+header h1 {
+    font-size: clamp(3rem, 5vw, 5rem); /*Ao alterar a largura da tela, o H1 muda de tamanho*/
 }
 
 header::before{
@@ -262,3 +295,21 @@ div {
 #secao-orcamento form output{
     grid-column: 2;
 }
+
+@media (width <= 890px){
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+}
+
+@media (width <= 768px){
+    .only-large{
+        display: none;
+    }
+}
+
+
+
